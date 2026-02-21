@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="result"></p>
+        <script>
+            var i;
+            var Max:0;
+            function findMax(){
+                for (i=0;i<arguments.length;i++){
+                    if (arguments[i]>Max){
+                        Max= arguments[i];
+                    }
+                }
+                return Max;
+            
+            }
+            document.getElementById("result").innerHTML=findMax(7,8,9);
+        </script>
+    </body>
+</html>
